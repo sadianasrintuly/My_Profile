@@ -73,24 +73,27 @@ body: Column(
       style: TextStyle(fontSize: 17, color: Colors.black),
     ),
 
-    Text("Cumilla"
-        ,
+    Text("Cumilla",
+
       style: TextStyle(fontSize: 17, color: Colors.black),
     ),
+    SizedBox(height: 20),
     Image(
         height: 180,
         width: 180,
         image: NetworkImage("https://camo.githubusercontent.com/81a20853b61026126d9ae8055114111426f9e59613050f47545fd86dbd78e8af/68747470733a2f2f696d672e6672656570696b2e636f6d2f7072656d69756d2d766563746f722f776f6d616e2d69732d776f726b696e672d636f6d70757465722d7368652d69732d77656172696e672d70696e6b2d68696a61625f3833353139372d353135302e6a70673f773d373430")),
-    SizedBox(height: 12),
+    SizedBox(height: 15),
     TextButton(
     style: TextButton.styleFrom(
-    backgroundColor: Colors.pink),
-
+    backgroundColor: Colors.pink,
+      minimumSize: Size(150, 40),
+    ),
     onPressed: (){
       Navigator.push(context, MaterialPageRoute(builder: (context)=>Next_page()));
     },
 
     child:
+
     Text("Next Page",
     style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,
       color: Colors.white
